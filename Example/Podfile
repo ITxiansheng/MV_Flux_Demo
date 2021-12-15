@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MV_Flux_Demo_Example' do
+  pod 'MV_Flux_Demo', :path => '../'
+  pod 'MJRefresh'
+  pod 'Masonry'
+
+  target 'MV_Flux_Demo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
