@@ -12,10 +12,16 @@
 		2964FEB32768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964FEB22768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m */; };
 		2964FEB72768CD090058C7E3 /* ZHMVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964FEB62768CD090058C7E3 /* ZHMVPModel.m */; };
 		2964FEBE2768D08C0058C7E3 /* ZHMVPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2964FEBD2768CE890058C7E3 /* ZHMVPPresenter.m */; };
-		298E4AF427698F6400482373 /* ZHMVCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4AF327698F6400482373 /* ZHMVCService.m */; };
-		298E4AF827698F9400482373 /* ZHMVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4AF727698F9400482373 /* ZHMVCModel.m */; };
-		298E4AFC27698FD600482373 /* ZHMVCCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4AFB27698FD600482373 /* ZHMVCCellTableViewCell.m */; };
-		298E4B002769901D00482373 /* ZHMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4AFF2769901D00482373 /* ZHMVCController.m */; };
+		298E4B1E2769F30200482373 /* ZHMVCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B162769F30200482373 /* ZHMVCService.m */; };
+		298E4B1F2769F30200482373 /* ZHMVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B192769F30200482373 /* ZHMVCController.m */; };
+		298E4B202769F30200482373 /* ZHMVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B1C2769F30200482373 /* ZHMVCModel.m */; };
+		298E4B212769F30200482373 /* ZHMVCCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B1D2769F30200482373 /* ZHMVCCellTableViewCell.m */; };
+		298E4B2A2769F3BC00482373 /* ZHMVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B292769F3BC00482373 /* ZHMVVMModel.m */; };
+		298E4B302769F58E00482373 /* ZHMVVMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B2F2769F58E00482373 /* ZHMVVMController.m */; };
+		298E4B332769F5B800482373 /* ZHMVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B322769F5B800482373 /* ZHMVVMViewModel.m */; };
+		298E4B36276A065000482373 /* ZHMVVMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B35276A065000482373 /* ZHMVVMCell.m */; };
+		298E4B3A276A073C00482373 /* ZHMVVMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B39276A073C00482373 /* ZHMVVMService.m */; };
+		298E4B3D276A158300482373 /* ZHMVVMCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B3C276A158300482373 /* ZHMVVMCellViewModel.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -58,14 +64,26 @@
 		2964FEB62768CD090058C7E3 /* ZHMVPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVPModel.m; sourceTree = "<group>"; };
 		2964FEBC2768CE890058C7E3 /* ZHMVPPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVPPresenter.h; sourceTree = "<group>"; };
 		2964FEBD2768CE890058C7E3 /* ZHMVPPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVPPresenter.m; sourceTree = "<group>"; };
-		298E4AF227698F6400482373 /* ZHMVCService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVCService.h; sourceTree = "<group>"; };
-		298E4AF327698F6400482373 /* ZHMVCService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVCService.m; sourceTree = "<group>"; };
-		298E4AF627698F9400482373 /* ZHMVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVCModel.h; sourceTree = "<group>"; };
-		298E4AF727698F9400482373 /* ZHMVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVCModel.m; sourceTree = "<group>"; };
-		298E4AFA27698FD600482373 /* ZHMVCCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVCCellTableViewCell.h; sourceTree = "<group>"; };
-		298E4AFB27698FD600482373 /* ZHMVCCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVCCellTableViewCell.m; sourceTree = "<group>"; };
-		298E4AFE2769901D00482373 /* ZHMVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVCController.h; sourceTree = "<group>"; };
-		298E4AFF2769901D00482373 /* ZHMVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVCController.m; sourceTree = "<group>"; };
+		298E4B142769F30200482373 /* ZHMVCCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMVCCellTableViewCell.h; sourceTree = "<group>"; };
+		298E4B162769F30200482373 /* ZHMVCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMVCService.m; sourceTree = "<group>"; };
+		298E4B172769F30200482373 /* ZHMVCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMVCService.h; sourceTree = "<group>"; };
+		298E4B192769F30200482373 /* ZHMVCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMVCController.m; sourceTree = "<group>"; };
+		298E4B1A2769F30200482373 /* ZHMVCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMVCController.h; sourceTree = "<group>"; };
+		298E4B1B2769F30200482373 /* ZHMVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMVCModel.h; sourceTree = "<group>"; };
+		298E4B1C2769F30200482373 /* ZHMVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMVCModel.m; sourceTree = "<group>"; };
+		298E4B1D2769F30200482373 /* ZHMVCCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMVCCellTableViewCell.m; sourceTree = "<group>"; };
+		298E4B282769F3BC00482373 /* ZHMVVMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHMVVMModel.h; sourceTree = "<group>"; };
+		298E4B292769F3BC00482373 /* ZHMVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMModel.m; sourceTree = "<group>"; };
+		298E4B2E2769F58E00482373 /* ZHMVVMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMController.h; sourceTree = "<group>"; };
+		298E4B2F2769F58E00482373 /* ZHMVVMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMController.m; sourceTree = "<group>"; };
+		298E4B312769F5B800482373 /* ZHMVVMViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMViewModel.h; sourceTree = "<group>"; };
+		298E4B322769F5B800482373 /* ZHMVVMViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMViewModel.m; sourceTree = "<group>"; };
+		298E4B34276A065000482373 /* ZHMVVMCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMCell.h; sourceTree = "<group>"; };
+		298E4B35276A065000482373 /* ZHMVVMCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMCell.m; sourceTree = "<group>"; };
+		298E4B38276A073C00482373 /* ZHMVVMService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMService.h; sourceTree = "<group>"; };
+		298E4B39276A073C00482373 /* ZHMVVMService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMService.m; sourceTree = "<group>"; };
+		298E4B3B276A158300482373 /* ZHMVVMCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMCellViewModel.h; sourceTree = "<group>"; };
+		298E4B3C276A158300482373 /* ZHMVVMCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMCellViewModel.m; sourceTree = "<group>"; };
 		39522ACF422117097ED55C6F /* MV_Flux_Demo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MV_Flux_Demo.podspec; path = ../MV_Flux_Demo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C648747B18B81FF59F3B13D /* Pods-MV_Flux_Demo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MV_Flux_Demo_Example.debug.xcconfig"; path = "Target Support Files/Pods-MV_Flux_Demo_Example/Pods-MV_Flux_Demo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MV_Flux_Demo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MV_Flux_Demo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,123 +141,175 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2964FE87276839E10058C7E3 /* MVC */ = {
+		298E4B092769E97C00482373 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				298E4AFD27698FFA00482373 /* Controller */,
-				298E4AF927698FA900482373 /* View */,
-				298E4AF527698F7D00482373 /* Model */,
-				298E4AF127698F4B00482373 /* Service */,
+				298E4B0F2769EA3600482373 /* Service */,
+				298E4B0E2769EA1F00482373 /* Presenter */,
+				298E4B0D2769E9F800482373 /* View */,
+				298E4B0C2769E9E800482373 /* Model */,
+				298E4B0B2769E9C100482373 /* Controller */,
 			);
-			name = MVC;
+			path = MVP;
 			sourceTree = "<group>";
 		};
-		2964FE88276839EB0058C7E3 /* MVVM */ = {
+		298E4B0B2769E9C100482373 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2964FE9B2768BE730058C7E3 /* ZHMVPController.h */,
+				2964FE9C2768BE730058C7E3 /* ZHMVPController.m */,
 			);
-			name = MVVM;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		2964FE89276839F60058C7E3 /* MVP */ = {
+		298E4B0C2769E9E800482373 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2964FEB82768CDF40058C7E3 /* Controller */,
-				2964FEB42768CCF40058C7E3 /* Model */,
-				2964FEB02768CC630058C7E3 /* View */,
-				2964FEAC2768CB4F0058C7E3 /* Presenter */,
-				2964FEA82768CB110058C7E3 /* Service */,
+				2964FEB52768CD090058C7E3 /* ZHMVPModel.h */,
+				2964FEB62768CD090058C7E3 /* ZHMVPModel.m */,
 			);
-			name = MVP;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2964FE8A27683A060058C7E3 /* FLUX */ = {
+		298E4B0D2769E9F800482373 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2964FEB12768CC7C0058C7E3 /* ZHMVPCellTableViewCell.h */,
+				2964FEB22768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m */,
 			);
-			name = FLUX;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2964FEA82768CB110058C7E3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				2964FEA92768CB300058C7E3 /* ZHMVPService.h */,
-				2964FEAA2768CB300058C7E3 /* ZHMVPService.m */,
-			);
-			name = Service;
-			sourceTree = "<group>";
-		};
-		2964FEAC2768CB4F0058C7E3 /* Presenter */ = {
+		298E4B0E2769EA1F00482373 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				2964FEBC2768CE890058C7E3 /* ZHMVPPresenter.h */,
 				2964FEBD2768CE890058C7E3 /* ZHMVPPresenter.m */,
 				2964FE9E2768BE940058C7E3 /* ZHMVPProtocol.h */,
 			);
-			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		2964FEB02768CC630058C7E3 /* View */ = {
+		298E4B0F2769EA3600482373 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				2964FEB12768CC7C0058C7E3 /* ZHMVPCellTableViewCell.h */,
-				2964FEB22768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		2964FEB42768CCF40058C7E3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2964FEB52768CD090058C7E3 /* ZHMVPModel.h */,
-				2964FEB62768CD090058C7E3 /* ZHMVPModel.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		2964FEB82768CDF40058C7E3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2964FE9B2768BE730058C7E3 /* ZHMVPController.h */,
-				2964FE9C2768BE730058C7E3 /* ZHMVPController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		298E4AF127698F4B00482373 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				298E4AF227698F6400482373 /* ZHMVCService.h */,
-				298E4AF327698F6400482373 /* ZHMVCService.m */,
+				2964FEA92768CB300058C7E3 /* ZHMVPService.h */,
+				2964FEAA2768CB300058C7E3 /* ZHMVPService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		298E4AF527698F7D00482373 /* Model */ = {
+		298E4B132769F27A00482373 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				298E4AF627698F9400482373 /* ZHMVCModel.h */,
-				298E4AF727698F9400482373 /* ZHMVCModel.m */,
+				298E4B232769F31600482373 /* Model */,
+				298E4B222769F30A00482373 /* View */,
+				298E4B182769F30200482373 /* Controller */,
+				298E4B152769F30200482373 /* Service */,
 			);
-			name = Model;
+			path = MVC;
 			sourceTree = "<group>";
 		};
-		298E4AF927698FA900482373 /* View */ = {
+		298E4B152769F30200482373 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				298E4AFA27698FD600482373 /* ZHMVCCellTableViewCell.h */,
-				298E4AFB27698FD600482373 /* ZHMVCCellTableViewCell.m */,
+				298E4B172769F30200482373 /* ZHMVCService.h */,
+				298E4B162769F30200482373 /* ZHMVCService.m */,
 			);
-			name = View;
+			path = Service;
 			sourceTree = "<group>";
 		};
-		298E4AFD27698FFA00482373 /* Controller */ = {
+		298E4B182769F30200482373 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				298E4AFE2769901D00482373 /* ZHMVCController.h */,
-				298E4AFF2769901D00482373 /* ZHMVCController.m */,
+				298E4B1A2769F30200482373 /* ZHMVCController.h */,
+				298E4B192769F30200482373 /* ZHMVCController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		298E4B222769F30A00482373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B142769F30200482373 /* ZHMVCCellTableViewCell.h */,
+				298E4B1D2769F30200482373 /* ZHMVCCellTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		298E4B232769F31600482373 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B1B2769F30200482373 /* ZHMVCModel.h */,
+				298E4B1C2769F30200482373 /* ZHMVCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		298E4B252769F3BC00482373 /* FLUX */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FLUX;
+			sourceTree = "<group>";
+		};
+		298E4B262769F3BC00482373 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B37276A072000482373 /* Service */,
+				298E4B2D2769F3E600482373 /* Controller */,
+				298E4B2C2769F3DC00482373 /* View */,
+				298E4B2B2769F3C500482373 /* ViewModel */,
+				298E4B272769F3BC00482373 /* Model */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		298E4B272769F3BC00482373 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B282769F3BC00482373 /* ZHMVVMModel.h */,
+				298E4B292769F3BC00482373 /* ZHMVVMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		298E4B2B2769F3C500482373 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B312769F5B800482373 /* ZHMVVMViewModel.h */,
+				298E4B322769F5B800482373 /* ZHMVVMViewModel.m */,
+				298E4B3B276A158300482373 /* ZHMVVMCellViewModel.h */,
+				298E4B3C276A158300482373 /* ZHMVVMCellViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		298E4B2C2769F3DC00482373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B34276A065000482373 /* ZHMVVMCell.h */,
+				298E4B35276A065000482373 /* ZHMVVMCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		298E4B2D2769F3E600482373 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B2E2769F58E00482373 /* ZHMVVMController.h */,
+				298E4B2F2769F58E00482373 /* ZHMVVMController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		298E4B37276A072000482373 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B38276A073C00482373 /* ZHMVVMService.h */,
+				298E4B39276A073C00482373 /* ZHMVVMService.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		436561A8FB4571D2BD0B1B4B /* Pods */ = {
@@ -290,10 +360,10 @@
 		6003F593195388D20070C39A /* Example for MV_Flux_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2964FE8A27683A060058C7E3 /* FLUX */,
-				2964FE89276839F60058C7E3 /* MVP */,
-				2964FE88276839EB0058C7E3 /* MVVM */,
-				2964FE87276839E10058C7E3 /* MVC */,
+				298E4B252769F3BC00482373 /* FLUX */,
+				298E4B262769F3BC00482373 /* MVVM */,
+				298E4B132769F27A00482373 /* MVC */,
+				298E4B092769E97C00482373 /* MVP */,
 				6003F59C195388D20070C39A /* ZHAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -454,14 +524,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MV_Flux_Demo_Example/Pods-MV_Flux_Demo_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/MV_Flux_Demo/MV_Flux_Demo.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MV_Flux_Demo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,18 +589,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298E4B332769F5B800482373 /* ZHMVVMViewModel.m in Sources */,
+				298E4B212769F30200482373 /* ZHMVCCellTableViewCell.m in Sources */,
+				298E4B3A276A073C00482373 /* ZHMVVMService.m in Sources */,
 				2964FEBE2768D08C0058C7E3 /* ZHMVPPresenter.m in Sources */,
 				2964FEAB2768CB300058C7E3 /* ZHMVPService.m in Sources */,
-				298E4B002769901D00482373 /* ZHMVCController.m in Sources */,
 				2964FE9D2768BE730058C7E3 /* ZHMVPController.m in Sources */,
-				298E4AF827698F9400482373 /* ZHMVCModel.m in Sources */,
+				298E4B3D276A158300482373 /* ZHMVVMCellViewModel.m in Sources */,
+				298E4B1F2769F30200482373 /* ZHMVCController.m in Sources */,
 				6003F59E195388D20070C39A /* ZHAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHViewController.m in Sources */,
 				2964FEB72768CD090058C7E3 /* ZHMVPModel.m in Sources */,
-				298E4AFC27698FD600482373 /* ZHMVCCellTableViewCell.m in Sources */,
+				298E4B2A2769F3BC00482373 /* ZHMVVMModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				298E4AF427698F6400482373 /* ZHMVCService.m in Sources */,
+				298E4B1E2769F30200482373 /* ZHMVCService.m in Sources */,
+				298E4B302769F58E00482373 /* ZHMVVMController.m in Sources */,
+				298E4B202769F30200482373 /* ZHMVCModel.m in Sources */,
 				2964FEB32768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m in Sources */,
+				298E4B36276A065000482373 /* ZHMVVMCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

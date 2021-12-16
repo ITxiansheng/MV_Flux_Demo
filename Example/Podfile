@@ -6,6 +6,7 @@ target 'MV_Flux_Demo_Example' do
   pod 'MV_Flux_Demo', :path => '../'
   pod 'MJRefresh'
   pod 'Masonry'
+  pod 'ReactiveCocoa', '~> 2.5'
 
   target 'MV_Flux_Demo_Tests' do
     inherit! :search_paths

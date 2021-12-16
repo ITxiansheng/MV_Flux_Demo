@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     self.itemList = @[@{@"MVC":@"ZHMVCController"},
-                      @{@"MVVM":@"ZHMVPController"},
+                      @{@"MVVM":@"ZHMVVMController"},
                       @{@"MVP":@"ZHMVPController"},
                       @{@"FLUX":@"STADVideoPlayerViewController"}
                      ];

@@ -56,7 +56,8 @@
     }];
 }
 
-#pragma mark tableView代理
+#pragma mark - tableView代理
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -77,6 +78,31 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingFooterView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+
 #pragma mark - indicator
 
 - (void)showLoadingTip {
@@ -95,13 +121,14 @@
 {
     ZHMVCModel *testModel = self.dataArr[indexPath.row];
     testModel.num ++;
-    [self.testTableView reloadData];
-
+    ((ZHMVCCellTableViewCell*)[self.testTableView cellForRowAtIndexPath:indexPath]).titleL.text = [@"计数值为:" stringByAppendingString: [@(testModel.num) stringValue]];
 }
 -(void)clickReduceBtnWithIndex:(NSIndexPath*)indexPath
 {
     ZHMVCModel *testModel = self.dataArr[indexPath.row];
     testModel.num --;
+    ((ZHMVCCellTableViewCell*)[self.testTableView cellForRowAtIndexPath:indexPath]).titleL.text = [@"计数值为:" stringByAppendingString: [@(testModel.num) stringValue]];
+
     [self.testTableView reloadData];
 }
 

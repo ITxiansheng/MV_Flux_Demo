@@ -105,17 +105,42 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+- (void)tableView:(UITableView *)tableView didEndDisplayingFooterView:(UIView *)view forSection:(NSInteger)section API_AVAILABLE(ios(6.0))
+{
+    NSLog(@"%@",NSStringFromSelector(_cmd));
+}
+
 #pragma mark 实现cell点击代理
 -(void)clickAddBtnWithIndex:(NSIndexPath *)indexPath{
     ZHMVPModel *testModel = self.dataArr[indexPath.row];
     testModel.num ++;
-    [self.testTableView reloadData];
+    ((ZHMVPCellTableViewCell*)[self.testTableView cellForRowAtIndexPath:indexPath]).titleL.text = [@"计数值为:" stringByAppendingString: [@(testModel.num) stringValue]];
 }
 
 -(void)clickReduceBtnWithIndex:(NSIndexPath *)indexPath{
     ZHMVPModel *testModel = self.dataArr[indexPath.row];
     testModel.num --;
-    [self.testTableView reloadData];
+    ((ZHMVPCellTableViewCell*)[self.testTableView cellForRowAtIndexPath:indexPath]).titleL.text = [@"计数值为:" stringByAppendingString: [@(testModel.num) stringValue]];
 }
 
 #pragma mark 懒加载

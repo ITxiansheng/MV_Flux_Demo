@@ -44,6 +44,7 @@
 
 - (void)hideLoadingTip {
     [self.indicatorView stopAnimating];
+    self.indicatorView.hidden = YES;
 }
 
 #pragma mark 懒加载
