@@ -1,14 +1,8 @@
-# MV_Flux_Demo
 
-[![CI Status](https://img.shields.io/travis/itxiansheng/MV_Flux_Demo.svg?style=flat)](https://travis-ci.org/itxiansheng/MV_Flux_Demo)
-[![Version](https://img.shields.io/cocoapods/v/MV_Flux_Demo.svg?style=flat)](https://cocoapods.org/pods/MV_Flux_Demo)
-[![License](https://img.shields.io/cocoapods/l/MV_Flux_Demo.svg?style=flat)](https://cocoapods.org/pods/MV_Flux_Demo)
-[![Platform](https://img.shields.io/cocoapods/p/MV_Flux_Demo.svg?style=flat)](https://cocoapods.org/pods/MV_Flux_Demo)
+## 说明
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
+GUI常用设计模式：MVC/MVP/MVVM/FLUX
+用不同设计模式实现相同功能
 
 ## Author
 
@@ -17,3 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## License
 
 MV_Flux_Demo is available under the MIT license. See the LICENSE file for more info.
+
+## use
+1、open MV_Flux_Demo.xcworkspace
+2、cd Example
+3、pod install
