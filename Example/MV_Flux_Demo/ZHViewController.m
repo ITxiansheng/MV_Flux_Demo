@@ -22,7 +22,7 @@
     self.itemList = @[@{@"MVC":@"ZHMVCController"},
                       @{@"MVVM":@"ZHMVVMController"},
                       @{@"MVP":@"ZHMVPController"},
-                      @{@"FLUX":@"STADVideoPlayerViewController"}
+                      @{@"FLUX":@"ZHADFLUXController"}
                      ];
 }
 

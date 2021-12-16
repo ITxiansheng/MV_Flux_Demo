@@ -1,43 +1,24 @@
 //
-//  ZHMVVMCell.m
+//  ZHADFluxCell.m
 //  MV_Flux_Demo_Example
 //
-//  Created by ITxiansheng on 2021/12/15.
+//  Created by ITxiansheng on 2021/12/16.
 //  Copyright © 2021 ITxiansheng. All rights reserved.
 //
 
-#import "ZHMVVMCell.h"
+#import "ZHADFluxCell.h"
 #import <Masonry/Masonry.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "ZHADActionCreator.h"
 
-@interface ZHMVVMCell ()
+@interface ZHADFluxCell ()
 
 @property (nonatomic, strong)UIButton *addBtn;
 @property (nonatomic, strong)UIButton *reduceBtn;
-@property (nonatomic, strong)ZHMVVMCellViewModel *viewModel;
+@property (nonatomic, strong)ZHADActionCreator *creator;
 
 @end
 
-@implementation ZHMVVMCell
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-}
-
--(void)setViewModel:(ZHMVVMCellViewModel *)viewModel
-{
-    _viewModel = viewModel;
-    self.titleL.text = [@"计数值为:" stringByAppendingString:[@(viewModel.model.num) stringValue]];
-    [_viewModel.resultSubject subscribeNext:^(NSNumber * x) {
-        //修改计数值
-        self.titleL.text = [@"计数值为:" stringByAppendingString: [x stringValue]];
-    }];
-}
+@implementation ZHADFluxCell
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -98,16 +79,25 @@
     return _reduceBtn;
 }
 
+- (void)setStore:(ZHFLUXStore *)store
+{
+    self.titleL.text = [@"计数值为:" stringByAppendingString:[@(store.dataArray[self.indexPath.row].num) stringValue]];
+    if (!_creator) {
+        _creator = [[ZHADActionCreator alloc] initWithActionIdentifier:store.identifier];
+    }
+}
+
 #pragma mark - action
 
 - (void)clickAddBtn:(id)sender
 {
-    [self.viewModel.addSubject sendNext:nil];
+    [_creator add:self.indexPath.row];
 }
 
 - (void)clickReduceBtn:(id)sender
 {
-    [self.viewModel.reduceSubject sendNext:nil];
+    [_creator reduce:self.indexPath.row];
 }
+
 
 @end

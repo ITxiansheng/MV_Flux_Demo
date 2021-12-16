@@ -22,6 +22,17 @@
 		298E4B36276A065000482373 /* ZHMVVMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B35276A065000482373 /* ZHMVVMCell.m */; };
 		298E4B3A276A073C00482373 /* ZHMVVMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B39276A073C00482373 /* ZHMVVMService.m */; };
 		298E4B3D276A158300482373 /* ZHMVVMCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B3C276A158300482373 /* ZHMVVMCellViewModel.m */; };
+		298E4B46276B07AB00482373 /* FluxAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B3F276B07AB00482373 /* FluxAction.m */; };
+		298E4B47276B07AB00482373 /* FluxDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B41276B07AB00482373 /* FluxDispatcher.m */; };
+		298E4B48276B07AB00482373 /* FluxStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B45276B07AB00482373 /* FluxStore.m */; };
+		298E4B4C276B0A0600482373 /* ZHFLUXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B4B276B0A0600482373 /* ZHFLUXModel.m */; };
+		298E4B52276B0A6000482373 /* ZHFLUXStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B51276B0A6000482373 /* ZHFLUXStore.m */; };
+		298E4B55276B0A8100482373 /* ZHRefreshAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B54276B0A8100482373 /* ZHRefreshAction.m */; };
+		298E4B5B276B0B4F00482373 /* ZHOperationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B5A276B0B4F00482373 /* ZHOperationAction.m */; };
+		298E4B5E276B0CF500482373 /* ZHADActionCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B5D276B0CF500482373 /* ZHADActionCreator.m */; };
+		298E4B62276B0EB900482373 /* ZHADFLUXService.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B61276B0EB900482373 /* ZHADFLUXService.m */; };
+		298E4B65276B172C00482373 /* ZHADFLUXController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B64276B172C00482373 /* ZHADFLUXController.m */; };
+		298E4B69276B1A9500482373 /* ZHADFluxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E4B68276B1A9500482373 /* ZHADFluxCell.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -84,6 +95,28 @@
 		298E4B39276A073C00482373 /* ZHMVVMService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMService.m; sourceTree = "<group>"; };
 		298E4B3B276A158300482373 /* ZHMVVMCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHMVVMCellViewModel.h; sourceTree = "<group>"; };
 		298E4B3C276A158300482373 /* ZHMVVMCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHMVVMCellViewModel.m; sourceTree = "<group>"; };
+		298E4B3F276B07AB00482373 /* FluxAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxAction.m; sourceTree = "<group>"; };
+		298E4B40276B07AB00482373 /* FluxStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxStore.h; sourceTree = "<group>"; };
+		298E4B41276B07AB00482373 /* FluxDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxDispatcher.m; sourceTree = "<group>"; };
+		298E4B42276B07AB00482373 /* FluxAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxAction.h; sourceTree = "<group>"; };
+		298E4B43276B07AB00482373 /* FluxDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxDispatcher.h; sourceTree = "<group>"; };
+		298E4B45276B07AB00482373 /* FluxStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxStore.m; sourceTree = "<group>"; };
+		298E4B4A276B0A0600482373 /* ZHFLUXModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFLUXModel.h; sourceTree = "<group>"; };
+		298E4B4B276B0A0600482373 /* ZHFLUXModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFLUXModel.m; sourceTree = "<group>"; };
+		298E4B50276B0A6000482373 /* ZHFLUXStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHFLUXStore.h; sourceTree = "<group>"; };
+		298E4B51276B0A6000482373 /* ZHFLUXStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHFLUXStore.m; sourceTree = "<group>"; };
+		298E4B53276B0A8100482373 /* ZHRefreshAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRefreshAction.h; sourceTree = "<group>"; };
+		298E4B54276B0A8100482373 /* ZHRefreshAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRefreshAction.m; sourceTree = "<group>"; };
+		298E4B59276B0B4F00482373 /* ZHOperationAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHOperationAction.h; sourceTree = "<group>"; };
+		298E4B5A276B0B4F00482373 /* ZHOperationAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHOperationAction.m; sourceTree = "<group>"; };
+		298E4B5C276B0CF500482373 /* ZHADActionCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHADActionCreator.h; sourceTree = "<group>"; };
+		298E4B5D276B0CF500482373 /* ZHADActionCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHADActionCreator.m; sourceTree = "<group>"; };
+		298E4B60276B0EB900482373 /* ZHADFLUXService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHADFLUXService.h; sourceTree = "<group>"; };
+		298E4B61276B0EB900482373 /* ZHADFLUXService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHADFLUXService.m; sourceTree = "<group>"; };
+		298E4B63276B172C00482373 /* ZHADFLUXController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHADFLUXController.h; sourceTree = "<group>"; };
+		298E4B64276B172C00482373 /* ZHADFLUXController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHADFLUXController.m; sourceTree = "<group>"; };
+		298E4B67276B1A9500482373 /* ZHADFluxCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHADFluxCell.h; sourceTree = "<group>"; };
+		298E4B68276B1A9500482373 /* ZHADFluxCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHADFluxCell.m; sourceTree = "<group>"; };
 		39522ACF422117097ED55C6F /* MV_Flux_Demo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MV_Flux_Demo.podspec; path = ../MV_Flux_Demo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C648747B18B81FF59F3B13D /* Pods-MV_Flux_Demo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MV_Flux_Demo_Example.debug.xcconfig"; path = "Target Support Files/Pods-MV_Flux_Demo_Example/Pods-MV_Flux_Demo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MV_Flux_Demo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MV_Flux_Demo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +282,13 @@
 		298E4B252769F3BC00482373 /* FLUX */ = {
 			isa = PBXGroup;
 			children = (
+				298E4B66276B1A7700482373 /* View */,
+				298E4B5F276B0E9500482373 /* Service */,
+				298E4B4F276B0A4400482373 /* Store */,
+				298E4B4E276B0A3200482373 /* Action */,
+				298E4B4D276B0A1A00482373 /* Controller */,
+				298E4B49276B09F400482373 /* Model */,
+				298E4B3E276B077F00482373 /* Framework */,
 			);
 			path = FLUX;
 			sourceTree = "<group>";
@@ -310,6 +350,77 @@
 				298E4B39276A073C00482373 /* ZHMVVMService.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		298E4B3E276B077F00482373 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B42276B07AB00482373 /* FluxAction.h */,
+				298E4B3F276B07AB00482373 /* FluxAction.m */,
+				298E4B43276B07AB00482373 /* FluxDispatcher.h */,
+				298E4B41276B07AB00482373 /* FluxDispatcher.m */,
+				298E4B40276B07AB00482373 /* FluxStore.h */,
+				298E4B45276B07AB00482373 /* FluxStore.m */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		298E4B49276B09F400482373 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B4A276B0A0600482373 /* ZHFLUXModel.h */,
+				298E4B4B276B0A0600482373 /* ZHFLUXModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		298E4B4D276B0A1A00482373 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B63276B172C00482373 /* ZHADFLUXController.h */,
+				298E4B64276B172C00482373 /* ZHADFLUXController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		298E4B4E276B0A3200482373 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B53276B0A8100482373 /* ZHRefreshAction.h */,
+				298E4B54276B0A8100482373 /* ZHRefreshAction.m */,
+				298E4B59276B0B4F00482373 /* ZHOperationAction.h */,
+				298E4B5A276B0B4F00482373 /* ZHOperationAction.m */,
+				298E4B5C276B0CF500482373 /* ZHADActionCreator.h */,
+				298E4B5D276B0CF500482373 /* ZHADActionCreator.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		298E4B4F276B0A4400482373 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B50276B0A6000482373 /* ZHFLUXStore.h */,
+				298E4B51276B0A6000482373 /* ZHFLUXStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		298E4B5F276B0E9500482373 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B60276B0EB900482373 /* ZHADFLUXService.h */,
+				298E4B61276B0EB900482373 /* ZHADFLUXService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		298E4B66276B1A7700482373 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				298E4B67276B1A9500482373 /* ZHADFluxCell.h */,
+				298E4B68276B1A9500482373 /* ZHADFluxCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		436561A8FB4571D2BD0B1B4B /* Pods */ = {
@@ -590,20 +701,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				298E4B332769F5B800482373 /* ZHMVVMViewModel.m in Sources */,
+				298E4B5E276B0CF500482373 /* ZHADActionCreator.m in Sources */,
+				298E4B46276B07AB00482373 /* FluxAction.m in Sources */,
 				298E4B212769F30200482373 /* ZHMVCCellTableViewCell.m in Sources */,
 				298E4B3A276A073C00482373 /* ZHMVVMService.m in Sources */,
 				2964FEBE2768D08C0058C7E3 /* ZHMVPPresenter.m in Sources */,
+				298E4B65276B172C00482373 /* ZHADFLUXController.m in Sources */,
 				2964FEAB2768CB300058C7E3 /* ZHMVPService.m in Sources */,
+				298E4B4C276B0A0600482373 /* ZHFLUXModel.m in Sources */,
 				2964FE9D2768BE730058C7E3 /* ZHMVPController.m in Sources */,
 				298E4B3D276A158300482373 /* ZHMVVMCellViewModel.m in Sources */,
+				298E4B62276B0EB900482373 /* ZHADFLUXService.m in Sources */,
 				298E4B1F2769F30200482373 /* ZHMVCController.m in Sources */,
+				298E4B47276B07AB00482373 /* FluxDispatcher.m in Sources */,
 				6003F59E195388D20070C39A /* ZHAppDelegate.m in Sources */,
+				298E4B52276B0A6000482373 /* ZHFLUXStore.m in Sources */,
+				298E4B55276B0A8100482373 /* ZHRefreshAction.m in Sources */,
+				298E4B69276B1A9500482373 /* ZHADFluxCell.m in Sources */,
 				6003F5A7195388D20070C39A /* ZHViewController.m in Sources */,
 				2964FEB72768CD090058C7E3 /* ZHMVPModel.m in Sources */,
 				298E4B2A2769F3BC00482373 /* ZHMVVMModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				298E4B1E2769F30200482373 /* ZHMVCService.m in Sources */,
 				298E4B302769F58E00482373 /* ZHMVVMController.m in Sources */,
+				298E4B5B276B0B4F00482373 /* ZHOperationAction.m in Sources */,
+				298E4B48276B07AB00482373 /* FluxStore.m in Sources */,
 				298E4B202769F30200482373 /* ZHMVCModel.m in Sources */,
 				2964FEB32768CC7C0058C7E3 /* ZHMVPCellTableViewCell.m in Sources */,
 				298E4B36276A065000482373 /* ZHMVVMCell.m in Sources */,

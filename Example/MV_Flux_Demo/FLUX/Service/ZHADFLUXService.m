@@ -1,14 +1,14 @@
 //
-//  ZHMVVMService.m
+//  ZHADFLUXService.m
 //  MV_Flux_Demo_Example
 //
-//  Created by ITxiansheng on 2021/12/15.
+//  Created by ITxiansheng on 2021/12/16.
 //  Copyright © 2021 ITxiansheng. All rights reserved.
 //
 
-#import "ZHMVVMService.h"
+#import "ZHADFLUXService.h"
 
-@implementation ZHMVVMService
+@implementation ZHADFLUXService
 
 -(void)loadDataWithSuccessBlcok:(void(^)(NSArray*))block{
     //模拟进行网络请求加载。。。。
